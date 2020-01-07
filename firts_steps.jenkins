@@ -1,5 +1,5 @@
 #!groovy
-// Check ub1 properties
+// Check salename properties
 properties([disableConcurrentBuilds()])
 
 pipeline {
@@ -18,7 +18,7 @@ pipeline {
         }
         stage("Second step") {
             steps {
-                sh 'ssh root@ub1 \'uptime\''
+                sh 'ssh root@salename.org \'uptime\''
             }
         }
     }
